@@ -2,30 +2,29 @@
 //
 
 #include "my_header.h"
+#include <stdio.h>
 #include <math.h>
-#define ECART 1.0e-10
+
+#define ECART 1e-10
+
 
 int main(void)
 {
+    double a = 2.0, b = 3.0, c = 4.0, delta;
+    unsigned char nb_solutions;
 
+    delta = b*b - 4*a*c;
 
-	double a, b, c;
-	double determinant;                 
-	unsigned char nb_solutions ;
-	
-	determinant = b *b-4.0*a*c;
-	
-	if ( (determinant > -ECART) && ( determinant < ECART ))
-			nb_solutions=1;
-			
-	else if (determinant > ECART)
-		nb_solutions= 0;
-	else
-		nb_solutions= 0;
-		
-	return 0;
-	
-		}
-		
-  
+    if( fabs(delta) < ECART )
+        nb_solutions = 1;
+    else if (delta > 0.0)
+        nb_solutions = 2;
+    else
+        nb_solutions = 0;
+
+        return 0;
 }
+
+
+
+Réduire 
