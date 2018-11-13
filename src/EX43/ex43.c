@@ -5,7 +5,7 @@ int main (void)
 {
 	int S1=3, n = 0;
 	
-	while (n<146)
+	while (n>0)
 	{
 		S1= 3+3*n;
 		
