@@ -11,7 +11,7 @@ int main(void)
 
 	double a, b, c;
 	double determinant;                 
-	unsigned char nb_solutions = 0;
+	unsigned char nb_solutions ;
 	
 	determinant = b *b-4.0*a*c;
 	
