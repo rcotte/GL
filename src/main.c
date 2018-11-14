@@ -3,7 +3,14 @@
 
 #include "my_header.h"
 
-int main(void)
+#include "TP_lib.h"
+
+void main(void)
 {
-    return 0;
+	short resultat , i=0;
+	while(i<10)
+	{
+		resultat=LancerDe();
+		i++;
+	}
 }
