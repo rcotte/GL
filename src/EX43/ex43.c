@@ -3,11 +3,11 @@
 
 int main (void)
 {
-	int S1=3, n = 0;
+	int S1=0, n = 0;
 	
 	while (n>0)
 	{
-		S1= 3+3*n;
+		S1= S1 + n;
 		
 		n = n+1;
 	}
@@ -19,11 +19,11 @@ int main (void)
 
 int main (void)
 {
-	int S2=3, n = 0;
+	int S2=0, n = 0;
 	
 	while (3*n<9876)
 	{
-		S2= 3+3*n;
+		S2= S2 +n;
 		
 		n = n+1;
 	}
