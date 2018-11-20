@@ -15,10 +15,11 @@ int main(void)
 	int sat[10]= {152, 25,-65,-125,241, 121,-250,-123, 15,99};
 	int A[6]= {1,13,3,8,5,11};
 	int B[6]= { 1,2,3,4,5,6};
+	int mirroir[4]={6,3};
 			  
-	int i, i2,i3,i4;
+	int i, i2,i3,i4,i5;
 	
-	for (i =0; i<10; i=i++)
+	for (i =0; i<10; i++)
 		
 	{
 		if(bin[i] < SEUIL)
@@ -53,8 +54,13 @@ int main(void)
 		B[i4]=A[5-i4];
 	}
 	
-	return 0;
-	
 
+	
+	for(i5=0;i5<2;i5++)
+	{
+		mirroir[i5+2]=mirroir[1-i5];
+	}
+	
+		return 0; 
 }
 	
