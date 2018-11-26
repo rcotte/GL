@@ -73,7 +73,7 @@ int main(void)
 	
 	for(i5=0;i5<2;i5++)
 	{
-		mirroir[i5+2]=mirroir[1-i5];
+		mirroir[i5+2]=mirroir[(-i5+2)-1];
 	}
 	
 		return 0; 
