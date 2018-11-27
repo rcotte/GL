@@ -6,15 +6,14 @@
 #include "TP_lib_suite.h"
 
 
-int main(void)
-  
-    {
+
 	 unsigned char joeur [6];
 	 unsigned char gagnante[6]={tirerNumero,tirerNumero,tirerNumero,tirerNumero,tirerNumero,tirerNumero};
 	 unsigned char bon_numero=0;
-	 int i,m;
+	 int i,i1,m;
 	
-	 
+	 unsigned char bon_num(){
+		 
 	 
 	 for (i=0;i<6;i++)
 	 {
@@ -25,8 +24,20 @@ int main(void)
 		 }
 	 }
 	 
-	 return 0;
-	 
+	 return bon_numero;
+	 }
+
+
+
+int tirage()
+
+{
+	initialiser();
+	
+	for(i1=0;i1<100;i1++)
+		gagnante[i1]=tirerNumero();
+return 0;
+}
+
 
 	
-	}
