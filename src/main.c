@@ -34,14 +34,15 @@ int main(void)
 		 score[s]=bon_numero;
 	 }
 	 }
-	 
-	 for(j=0;j<99;j++)
-	 {
-		 if (score[j]>>score[j+1])
+	 score_max=score[1];
+
+	 for(j=2;j<100;j++)
+	 {    
+		 if (score_max>>score[j])
 			
-			 score_max=score[j];
-	 else
-		 score_max=score[j+1];
+			 score_max=score_max;
+	     else
+		 score_max=score[j];
 	 }
 			 
 	 
